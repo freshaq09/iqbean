@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQBEAN Consultation Request</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=DM+Sans:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .form-card {
+            background: white;
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .form-header {
+            margin-bottom: 32px;
+        }
+        .form-header h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 16px 0;
+        }
+        .form-header p {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            color: #64748b;
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 24px;
+        }
+        .form-group label {
+            display: block;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            color: #1a1a1a;
+            background: #f8fafc;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+            color: #64748b;
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <div class="form-header">
+                <h1>IQBEAN Consultation Request</h1>
+                <p>Hi Wajahath, you've received a new consultation request through the website.</p>
+            </div>
+            
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" value="{{full-name}}" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label>Work Email</label>
+                <input type="email" value="{{work-email}}" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label>Company</label>
+                <input type="text" value="{{company}}" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label>IT Talent Needed</label>
+                <input type="text" value="{{talent-type}}" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label>Submitted</label>
+                <input type="text" value="{{submitted_at}}" readonly>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>This email was sent from your IQBEAN website contact form.</p>
+            <p>© 2024 IQBEAN. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html> 
